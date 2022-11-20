@@ -12,9 +12,39 @@
     content: none;
 }
 
+.about__description {
+    position: absolute;
+    margin-top: -20px;
+}
+
+.social_icon_container {
+    position: relative;
+    margin-top: 235px;
+}
+
+.social_icon {
+    position: relative;
+}
+
+.social_icon_hovered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    transform: translate(-50%, -50%) scale(1.0);
+    pointer-events: none;
+    opacity: 0;
+}
+.social_icon:hover+.social_icon_hovered {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.25);
+    transition: 0.25s ease-in;
+}
 /* Social media links */
 .aside__social-links {
     padding: 0;
+    margin-left: -5px;
 }
 
 .aside__social-links li {

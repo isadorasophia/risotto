@@ -89,3 +89,7 @@ unsafe = true
 
   [services.twitter]
     disableInlineCSS = true
+
+[markup]
+  [markup.highlight]
+    noClasses = false
